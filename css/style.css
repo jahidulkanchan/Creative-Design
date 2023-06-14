@@ -611,19 +611,19 @@ h1 u {
   align-items: center;
   left: 15px;
   padding-bottom: 5px;
-  content: "+";
-  color: #5100b5;
-  background-color: #ffffff;
-  width: 17px;
-  height: 17px;
+  font-family: "Font Awesome 6 Free";
+  content: "\f106";
+  transform: rotate(90deg);
+  color: #ffffff;
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
   background-image: none;
 }
 .accordion-button:not(.collapsed)::after {
-  content: "-";
-  transform: none;
+  font-family: "Font Awesome 6 Free";
+  content: "\f106";
+  transform: rotate(180deg);
   background-image: none;
 }
 
