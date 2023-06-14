@@ -237,10 +237,10 @@ h1 u {
   width: 100%;
   height: 100px;
   z-index: 99999999;
-  background-color: #240296;
+  background-image: var(--linear);
 }
 #header.active {
-  background-color: #ffffff;
+  background-image: linear-gradient(#ffffff,#ffffff);
   box-shadow: 0px 0px 10px #00000045;
 }
 #header.active .menu li a {
@@ -381,24 +381,27 @@ h1 u {
   position: relative;
   width: 100%;
   min-height: 280px;
-  background-color: #240296;
+  background-image: linear-gradient(-45deg, #8c00ff, #240296);
   border-radius: 30px 0px 30px 0px;
   cursor: pointer;
   overflow-x: hidden;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
   z-index: 2;
 }
-.banner-section .item::after {
+
+.banner-section .item:hover {
+  background-image: linear-gradient(90deg, #8c00ff, #4c28c2);
+}
+/* .banner-section .item::after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleY(0);
-  transform-origin: bottom;
   z-index: -1;
   transition: 0.3s ease;
+  background-image: linear-gradient(-45deg, #8c00ff, #240296);
 }
 .banner-section .item:hover:after {
   position: absolute;
@@ -407,9 +410,8 @@ h1 u {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleY(1);
-  background-color: #110051;
-}
+  background-image: linear-gradient(90deg, #8c00ff, #240296);
+} */
 
 /* --------polish-section-------- */
 .polish-section {
@@ -931,11 +933,18 @@ h1 u {
 .article-section .btn:hover {
   transform: translateY(-30px);
 }
+
 .article-section .btn a {
   padding: 15px 30px;
   border-radius: 5px;
+  font-weight: 700;
   color: #ffffff;
   background-image: var(--linear);
+}
+.article-section .btn:hover a{
+  background-image: none;
+  border: 2px solid #4300be;
+  color: #4300be;
 }
 
 /* --------------End------------ */
