@@ -120,10 +120,10 @@ h1 u {
     padding-top: 50px;
     color: #ffffff;
   }
-  body .accordion-button::before,
+  /* body .accordion-button::before,
   body .accordion-button::after {
     display: none;
-  }
+  } */
   body .bg-images img {
     width: 100%;
   }
@@ -131,12 +131,12 @@ h1 u {
     top: 0%;
   }
   body .accordion-button {
-    padding-left: 15px;
+    padding-left: 65px;
     font-weight: normal;
     color: blueviolet;
   }
   body .accordion-button:not(.collapsed) {
-    color: blueviolet;
+    color: #ffffff;
   }
 
   body .article-section .btn {
@@ -551,26 +551,19 @@ h1 u {
   z-index: 1;
 }
 .project-section .count {
-  margin-top: 50px;
+  margin: 10px 0px;
   position: relative;
-}
-.project-section .count .icon {
-  position: absolute;
-  top: -50px;
-  left: 90px;
-  z-index: 2;
-}
-.project-section .icon .fa-solid,
-.icon .fa-brands {
-  font-size: 3rem;
-  color: #ffffff;
-}
-.count h1 {
-  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 30px 0px 30px 0px;
+  color: #6e00dc;
   font-weight: bold;
+  background-color: #ffffff;
 }
-.count p {
-  font-weight: bold;
+.project-section .fa-solid,.project-section .fa-brands{
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 /* -----------End---------- */
 /* --------frequent-section------- */
@@ -845,7 +838,7 @@ h1 u {
 /* ---------article-section------- */
 .article-section {
   position: relative;
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
   min-height: 600px;
   text-align: center;
 }
@@ -856,6 +849,7 @@ h1 u {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  transition: .3s ease;
 }
 .article-section .card img {
   opacity: 0.5;
@@ -863,6 +857,7 @@ h1 u {
 }
 .article-section .card:hover img {
   opacity: 1;
+  transform: scale(1.1);
 }
 .article-section .card .date {
   position: absolute;
@@ -894,11 +889,11 @@ h1 u {
   color: #6a04cf;
 }
 .article-section .btn {
-  padding: 50px 0px;
+  padding: 50px 0px 20px 0px;
   transition: 0.3s ease;
 }
 .article-section .btn:hover {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
 }
 .article-section .btn a {
   padding: 15px 30px;
