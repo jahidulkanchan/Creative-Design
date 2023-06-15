@@ -47,7 +47,7 @@ $('.owl-carousel').owlCarousel({
 //counter
 $('.counterup').counterUp({
   delay: 10,
-  time: 500
+  time: 800
 });
 // wow js
 new WOW().init();
